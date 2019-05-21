@@ -19,7 +19,13 @@ if (mysqli_num_rows($result) > 0) {
     // echo($_SESSION['id']);
     $_SESSION['email'] = $login;
     $_SESSION['senha'] = $senha;
-    header('location:listar.php');
+    echo("<br>Tipo de Acesso =".$retornoDoSelect['tipoDeAcesso']);
+    $_SESSION['id'] =$retornoDoSelect['id'];
+    $_SESSION['email'] =$retornoDoSelect['email'];
+    $_SESSION['tipoDeAcesso'] =$retornoDoSelect['tipoDeAcesso'];
+
+
+     header('location:paginaInterna.php');
 
     
 

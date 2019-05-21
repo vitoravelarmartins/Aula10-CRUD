@@ -1,0 +1,13 @@
+
+
+article{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 100px 0 100px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+h1{
+    margin: 10px;
+    text-align: center; 
+}
